@@ -5,16 +5,19 @@
   "data": {
     "url": "https://raw.githubusercontent.com/varxem/FIT3179/main/LaborForce2016.csv"
   },
-  "title": "Number of Females in Labour Force",
+  "transform":[{
+    "calculate": "datum.Total/1000000", "as": "Millions"
+  }],
+  "title": "Number of Females in Labour Force (millions)",
   "mark": {"type": "line", "point": true, "tooltip": true},
   "encoding": {
     "x": {"field": "Year", "title": null},
     "y": {
-      "field": "Total",
+      "field": "Millions",
       "type": "quantitative",
-      "scale": {"domain": [10000000, 50000000]},
-      "title": "Number of Females",
-      "axis": {"grid": false}
+      "scale": {"domain": [10, 50]},
+      "axis": {"grid": false},
+      "title": null
     },
     "color": {"field": "Country Name", "type": "nominal", "title": "Country"}
   },
