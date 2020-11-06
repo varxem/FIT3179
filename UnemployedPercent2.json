@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Percentage of Unemployed People (2016)",
+  "width": 300,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/varxem/FIT3179/main/UnemploymentPercent2.csv"
+  },
+  "mark": {"type": "bar", "tooltip": true},
+  "encoding": {
+    "column": {"field": "Country Name"},
+    "y": {
+      "aggregate": "sum",
+      "field": "Percentage",
+      "title": "% Unemployed",
+      "type": "quantitative",
+      "axis": {"grid": false}
+    },
+    "x": {"field": "Gender", "type": "nominal", "title": null},
+    "color": {"field": "Gender", "scale": {"range": ["#675193", "#ca8861"]}}
+  },
+  "config": {"view": {"stroke": "transparent"}, "axis": {"domainWidth": 1}}
+}
