@@ -7,7 +7,7 @@
   },
   "mark": {"type": "bar", "tooltip": true},
   "encoding": {
-    "column": {"field": "Country Name"},
+    "column": {"field": "Country Name", "title": null},
     "y": {
       "aggregate": "sum",
       "field": "Percentage",
