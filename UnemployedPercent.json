@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "height": 300,
+  "width": 400,
+  "title": "Percentage of Unemployed Females (2016)",
+  "data": {
+    "url": "https://raw.githubusercontent.com/varxem/FIT3179/main/UnemploymentPercent.csv"
+  },
+  "mark": {"type": "bar", "tooltip": true},
+  "encoding": {
+    "x": {"field": "Country Name", "type": "nominal", "title": null},
+    "y": {
+      "field": "Percentage",
+      "title": "% Females Unemployed",
+      "type": "quantitative"
+    }
+  },
+  "config": {}
+}

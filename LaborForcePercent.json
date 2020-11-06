@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Percentage of Females in Labour Force (2016)",
+  "width": 800,
+  "height": 400,
+  "data": {
+    "url": "https://varxem.github.io/FIT3179/ne_110m.json",
+    "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.NAME",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/varxem/FIT3179/main/LaborForcePercent2016.csv"
+        },
+        "key": "Country Name",
+        "fields": ["Percentage"]
+      }
+    }
+  ],
+  "projection": {"type": "equirectangular"},
+  "mark": {"type": "geoshape"},
+  "encoding": {
+    "color": {
+      "field": "Percentage",
+      "type": "quantitative",
+      "scale": {"type": "linear", "scheme": "purples", "domain": [0, 65]}
+    },
+    "tooltip": [
+      {"field": "properties.NAME", "type": "nominal", "title": "Country Name"},
+      {"field": "Percentage", "type": "quantitative"}
+    ]
+  },
+  "config": {}
+}
