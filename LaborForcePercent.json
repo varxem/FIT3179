@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Percentage of Females in Labour Force (2016)",
+  "title": "Percentage of Females that make up Labour Force (2016)",
   "width": 800,
   "height": 400,
   "data": {
