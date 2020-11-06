@@ -16,7 +16,7 @@
       "axis": {"grid": false}
     },
     "x": {"field": "Gender", "type": "nominal", "title": null},
-    "color": {"field": "Gender", "scale": {"range": ["#675193", "#ca8861"]}}
+    "color": {"field": "Gender"}
   },
   "config": {"view": {"stroke": "transparent"}, "axis": {"domainWidth": 1}}
 }
