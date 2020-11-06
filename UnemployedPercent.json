@@ -4,7 +4,7 @@
   "width": 300,
   "height": 400,
   "data": {
-    "url": "https://raw.githubusercontent.com/varxem/FIT3179/main/UnemploymentPercent2.csv"
+    "url": "https://raw.githubusercontent.com/varxem/FIT3179/main/UnemploymentPercent.csv"
   },
   "mark": {"type": "bar", "tooltip": true},
   "encoding": {
