@@ -17,7 +17,7 @@
       "type": "quantitative",
       "scale": {"domain": [10, 50]},
       "axis": {"grid": false},
-      "title": null
+      "title": "Females in millions"
     },
     "color": {"field": "Country Name", "type": "nominal", "title": "Country"}
   },
