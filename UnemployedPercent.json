@@ -1,7 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Percentage of Unemployed People (2016)",
-  "width": 300,
   "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/varxem/FIT3179/main/UnemploymentPercent.csv"
