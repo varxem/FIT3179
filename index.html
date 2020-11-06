@@ -12,42 +12,120 @@
     
 	<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	  
+	
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	
+	<style>
+	body{
+		background-color: #777777;
+	}
+	div.page {
+		background-color: white;
+		margin:auto;
+		padding:100px;
+		width: 900px;
+		
+		}
+		
+	div.pure-g {
+		margin-bottom: 20px;
+		}
+	h2 {
+		font-family: 'Noto Sans TC', sans-serif;
+		font-size: 36px;
+		}
+		
+	p {
+		font-family: 'Roboto', sans-serif;
+		font-size: 22px;
+		}
+	
+	h3 {
+		font-family: 'Noto Sans TC', sans-serif;
+		font-size: 25px;
+		}
+		
+	f {
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+		
+		color: #675193;
+		font-size: 22px;
+		}
+	
+	r {
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+		
+		color: #54A24B;
+		font-size: 22px;
+		}
+		
+	z {
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+		
+		color: #4C78A8;
+		font-size: 22px;
+		}
+		
+	
+	
+	</style>
   </head>
   <body>
   <div class="page">
   
     <div class="pure-g">
-      <h1>Gender issues in Employment</h1>
+		<div class="pure-u-1-1">
+      <h2>Gender inequality in Employment</h2>
+	  
+	  <p>In the current day and age, does gender inequality still exist in the workplace?
+	  </div>
     </div>
     
 	<div class="pure-g">
 		<div class="pure-u-1-3">
-		text
+		<h3>Equality in the workplace</h3>
+		<p>In most countries, <f>females</f> make up over 40 percent of the labour force</p>
+		<p>There are some countries, mainly in the Middle East, where <f>females</f> make up less than 30 percent of their workforce</p>
 		</div>
 		<div class="pure-u-2-3">
 		<div id="vis"></div>
 		</div>
 	</div>
+	<br>
 	
     <div class="pure-g">
-		<div class="pure-u-1-3">
-		While most countries have shown growth in the number of females in the labour force over the past decade, some like Russia have instead regressed whereas others like Brazil have far exceeded expectations
-		</div>
+		
 		<div class="pure-u-2-3">
 		<div id="vis2"></div>
 		</div>
+		<div class="pure-u-1-3">
+		<h3>Changes in the past decade</h3>
+		<p>While most countries have shown growth in the number of females in the labour force over the past decade, some like <r>Russia</r> have instead regressed whereas others like <z>Brazil</z> have far exceeded expectations
+		</p>
+		</div>
 	</div>
+	<br>
 	
 	<div class="pure-g">
 		<div class="pure-u-1-3">
-		Female unemployment seems to be unrelated to a country's economic status and is more likely to be a result of social roles and expectations that vary between cultures and societies
+		<h3>More effort is needed</h3>
+		<p>Despite a large increase in females entering the workforce, <z>Brazil's</z> unemployment rate for <f>females</f> is significantly higher than their total rate
+		<p><f>Female</f> unemployment seems to be unrelated to a country's economic status and is more likely to be a result of social roles and expectations that vary between cultures and societies
+		</p>
 		</div>
 		<div class="pure-u-2-3">
 		<div id="vis3"></div>
 		</div>
 	</div>	
-    
+    <br>
+	
+	<div class="pure-g">
+		<div class="pure-u-1-1">
+		Data used has been taken from <a href="https://data.worldbank.org/">The World Bank</a>
+		</div>
 	
   </div>  
     
