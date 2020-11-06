@@ -13,7 +13,8 @@
       "field": "Total",
       "type": "quantitative",
       "scale": {"domain": [10000000, 50000000]},
-      "title": "Number of Females"
+      "title": "Number of Females",
+      "axis": {"grid": false}
     },
     "color": {"field": "Country Name", "type": "nominal", "title": "Country"}
   },
